@@ -1,0 +1,141 @@
+/* Reset some basic elements */
+body, h1, h2, h3, p, a, form, button {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Basic body styling */
+body {
+    background: linear-gradient(135deg, #f06, #f9d423); /* Gradient background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+/* Header styling */
+header {
+    background: #ff5722; /* Deep orange background */
+    color: white;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* Highlighted letters */
+.highlight {
+    color: #f9d423; /* Highlight color */
+}
+
+/* Main content styling */
+main {
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Post container styling */
+.post-container {
+    margin-bottom: 2rem;
+}
+
+/* Post styling */
+.post {
+    background: #f7f7f7;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.user {
+    color: #ff5722;
+    margin-bottom: 0.5rem;
+}
+
+.content {
+    margin-bottom: 1rem;
+}
+
+/* Actions styling */
+.actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.actions .btn {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    background: #007BFF; /* Blue background */
+    transition: background 0.3s ease;
+}
+
+.actions .btn:hover {
+    background: #0056b3;
+}
+
+.actions .btn.danger {
+    background: #dc3545; /* Red background */
+}
+
+.actions .btn.danger:hover {
+    background: #c82333;
+}
+
+.actions .btn.edit {
+    background: #ffc107; /* Yellow background */
+}
+
+.actions .btn.edit:hover {
+    background: #e0a800;
+}
+
+.actions .btn.see {
+    background: #17a2b8; /* Teal background */
+}
+
+.actions .btn.see:hover {
+    background: #138496;
+}
+
+/* New post button styling */
+.new-post {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.new-post .btn.primary {
+    background: #28a745; /* Green background */
+}
+
+.new-post .btn.primary:hover {
+    background: #218838;
+}

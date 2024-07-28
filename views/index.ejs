@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <title>My Persona</title>
+</head>
+<body>
+    <header>
+        <h1><span class="highlight">M</span>Y <span class="highlight">P</span>ERSONA</h1>
+        <h2>WELCOME TO THE WORLD OF MY PERSONA</h2>
+    </header>
+    <main>
+        <div class="post-container">
+            <% for(post of posts){ %>
+                <div class="post">
+                    <h3 class="user">@<%= post.username %></h3>
+                    <p class="content"><%= post.content %></p>
+                    <div class="actions">
+                        <a class="btn see" href="http://localhost:8080/posts/<%= post.id %>">See in detail</a>
+                        <a class="btn edit" href="http://localhost:8080/posts/<%= post.id %>/edit">Edit</a>
+                        <form method="post" action="/posts/<%= post.id %>?_method=DELETE">
+                            <button class="btn danger" type="submit">Delete</button>
+                        </form>
+                    </div>
+                </div>
+            <% } %>
+        </div>
+        <div class="new-post">
+            <a class="btn primary" href="http://localhost:8080/posts/new">Create new post</a>
+        </div>
+    </main>
+</body>
+</html>
